@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab3 JS | Каталог</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="site-body">
+    <header class="site-header">
+        <div class="page-shell top-row">
+            <a class="brand" href="index.html">MISIS Store</a>
+            <nav class="site-nav" id="mainMenu">
+                <a class="site-nav__link" href="index.html">Главная</a>
+                <a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="content-card">
+            <h1>Каталог ноутбуков</h1>
+            <p class="lead-text">
+                Выбери категорию, добавь товары в корзину и оплачивай!!
+            </p>
+            <p class="cart-counter">Сейчас в корзине: <strong id="cartCounter">0 товаров</strong></p>
+
+            <div class="filter-panel">
+                <label for="categoryFilter">Фильтр по категории:</label>
+                <select id="categoryFilter">
+                    <option value="all">Все товары</option>
+                    <option value="study">Для учёбы</option>
+                    <option value="work">Для работы</option>
+                    <option value="power">Помощнее</option>
+                </select>
+                <button id="resetFilter" class="button button--secondary" type="button">Сбросить фильтр</button>
+            </div>
+        </section>
+
+        <section class="catalog-layout">
+            <div class="catalog-grid" id="catalogGrid">
+                <div class="product-column">
+                    <article class="product-card" data-id="1" data-price="45990" data-category="study">
+                        <img src="assets/images/asus-thumb.png" alt="Ноутбук ASUS VivoBook">
+                        <h2 class="catalog-title">ASUS VivoBook</h2>
+                        <p>Простой вариант для пар, браузера, конспектов и обычной учебной работы.</p>
+                        <p class="price">45 990 ₽</p>
+                        <div class="catalog-actions">
+                            <a class="button button--secondary" href="products/asus.html">Открыть</a>
+                            <button class="button button--primary add-to-cart" type="button">Добавить в корзину</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="product-column">
+                    <article class="product-card" data-id="2" data-price="51990" data-category="work">
+                        <img src="assets/images/lenovo-thumb.png" alt="Ноутбук Lenovo IdeaPad">
+                        <h2 class="catalog-title">Lenovo IdeaPad</h2>
+                        <p>Нормальный ноутбук для учёбы, документов, таблиц и повседневных задач.</p>
+                        <p class="price">51 990 ₽</p>
+                        <div class="catalog-actions">
+                            <a class="button button--secondary" href="products/lenovo.html">Открыть</a>
+                            <button class="button button--primary add-to-cart" type="button">Добавить в корзину</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="product-column">
+                    <article class="product-card" data-id="3" data-price="56990" data-category="study">
+                        <img src="assets/images/hp-thumb.jpg" alt="Ноутбук HP Pavilion">
+                        <h2 class="catalog-title">HP Pavilion</h2>
+                        <p>Экран побольше, поэтому удобно смотреть лекции, видео и работать с текстом.</p>
+                        <p class="price">56 990 ₽</p>
+                        <div class="catalog-actions">
+                            <a class="button button--secondary" href="products/hp.html">Открыть</a>
+                            <button class="button button--primary add-to-cart" type="button">Добавить в корзину</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="product-column">
+                    <article class="product-card" data-id="4" data-price="68990" data-category="power">
+                        <img src="assets/images/dell-thumb.png" alt="Ноутбук Dell Inspiron">
+                        <h2 class="catalog-title">Dell Inspiron</h2>
+                        <p>Более мощная модель, если нужно открывать много программ и работать быстрее.</p>
+                        <p class="price">68 990 ₽</p>
+                        <div class="catalog-actions">
+                            <a class="button button--secondary" href="products/dell.html">Открыть</a>
+                            <button class="button button--primary add-to-cart" type="button">Добавить в корзину</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <aside class="content-card cart-panel">
+                <h2>Корзина</h2>
+                <div id="cartItems" class="cart-items">
+                    <p class="cart-empty">Пока тут пусто. Добавь товар из каталога.</p>
+                </div>
+                <p id="cartTotal" class="cart-total">Итого: 0 ₽</p>
+                <div class="cart-buttons">
+                    <button id="clearCart" class="button button--danger" type="button">Очистить корзину</button>
+                    <button id="payButton" class="button button--success" type="button">Оплатить</button>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="page-shell">
+            <p>&copy; Все права защищены</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
