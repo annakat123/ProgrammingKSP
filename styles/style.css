@@ -1,0 +1,168 @@
+/* Общие стили всей страницы */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(238, 243, 248);
+    color: rgb(33, 37, 41);
+}
+
+/* Контейнер контента с ограничением ширины */
+.page-shell {
+    width: 92%;
+    max-width: 980px;
+    margin: 0 450px;
+}
+
+/* Шапка сайта (верхний блок) */
+.site-header {
+    background-color: rgb(215, 225, 236);
+    border-bottom: 1px solid rgb(180, 195, 210);
+    padding: 20px 0;
+}
+
+/* Список пунктов меню */
+.menu-list {
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+/* Один пункт меню */
+.menu-list li {
+    display: inline-block;
+    margin-right: 14px;
+}
+
+/* Ссылки в меню */
+.menu-list a {
+    color: rgb(20, 60, 110);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Эффект при наведении на ссылку меню */
+.menu-list a:hover {
+    text-decoration: underline;
+}
+
+/* Главный заголовок страницы (h1) */
+h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+/* Основная часть страницы */
+main {
+    padding: 24px 0;
+}
+
+/* Общий вид карточек (инфоблок и карточка товара) */
+.content-card,
+.product-card {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(210, 220, 230);
+    padding: 18px;
+}
+
+/* Вводный текст под заголовком */
+.lead-text {
+    max-width: 760px;
+    line-height: 1.5;
+}
+
+/* Сетка карточек в каталоге */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+}
+
+/* Выравнивание контента карточки товара по центру */
+.product-card {
+    text-align: center;
+}
+
+/* Миниатюра товара внутри карточки каталога */
+.product-card img {
+    width: 140px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Название товара в каталоге */
+.catalog-title {
+    margin: 12px 0 8px;
+}
+
+/* Обычные ссылки-действия (например, перейти в каталог) */
+.action-link {
+    color: rgb(100, 50, 100);
+}
+
+/* Верхняя часть страницы товара: фото + краткая информация */
+.product-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: flex-start; /* выравнивает элементы по верхнему краю */
+}
+
+/* Изображение товара на странице товара */
+.product-image {
+    width: 210px;
+    border: 1px solid rgb(190, 205, 220);
+}
+
+/* Блок с основным текстом рядом с фото товара */
+.product-main-info {
+    flex: 1;  /* растянем fade блок во всю строку */
+    min-width: 240px;
+}
+
+/* Отдельный смысловой блок на странице товара */
+.product-section {
+    margin-top: 20px;
+}
+
+/* Заголовки разделов на странице товара */
+.section-title {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgb(210, 220, 240);
+    padding: 8px 10px;
+}
+
+/* Краткое описание товара */
+.short-description {
+    color: rgb(95, 100, 135);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/* Подробное описание товара */
+.details-text {
+    color: rgb(60, 70, 90);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* Список характеристик товара */
+.features-list {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    line-height: 24px;
+    list-style-image: url("../assets/images/check-marker.svg");
+    padding-left: 30px;
+}
+
+/* Подвал сайта (нижняя плашка) */
+.site-footer {
+    padding: 16px 0;
+    color: rgb(80, 90, 105);
+}

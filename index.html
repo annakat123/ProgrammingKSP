@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab2 CSS | Главная</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="page-shell">
+            <nav class="site-menu">  <!--блок навигации по сайту-->
+                <ul class="menu-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+
+            <h1>Магазин ноутбуков Student Tech</h1>
+            <p class="lead-text">
+                Это главная страница моего сайта. Тут я просто кратко написал, что это магазин ноутбуков,
+                а основная стилизация уже лежит в отдельном CSS-файле, как и просили в задании.
+            </p>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="content-card">  <!-- для логического раздела страницы с заголовком -->
+            <h2 class="section-title">Немного о сайте</h2>
+            <p class="details-text">
+                На сайте есть каталог и отдельные страницы товаров. Для второй практической я
+                вынес все стили в один файл, чтобы было видно, как работает подключение внешнего CSS.
+            </p>
+            <a class="action-link" href="catalog.html">Перейти в каталог</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="page-shell">
+            <p>© Lab2_CSS</p>
+        </div>
+    </footer>
+</body>
+</html>
